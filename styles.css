@@ -126,3 +126,55 @@ img {
 .bodyOfD p:last-child {
   line-height: 1.4;
 }
+
+.attribution{
+  text-align: center;
+}
+@media (max-width: 500px) {
+
+  body {
+   margin: 0;
+  }
+  .grid-container {
+  display: grid;
+  margin: 70px 25px ;
+  width: auto;
+  height: auto;
+  grid-template: repeat(5, auto) / 325px;
+  gap: 25px 0;
+}
+  .Daniel, .Patrick {
+    grid-column: span 1;
+   
+  }
+  
+  .Kira {
+    grid-row: span 1;
+  }
+  
+  .Daniel {
+    order: 1;
+    background-position: top 0 right 25px;
+
+  }
+  
+  .Johnathan{
+    order: 2;
+  }
+  
+  .Jeannette {
+    order: 3;
+  }
+  
+  .Patrick {
+    order: 4;
+  }
+  
+  .Kira {
+    order: 5;
+  }
+  
+  .Daniel, .Johnathan, .Jeannette, .Patrick, .Kira {
+    padding: 25px 34px 35px 32px;
+  }
+}
